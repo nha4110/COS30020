@@ -3,7 +3,8 @@
 <head> 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <meta name="description" content="Web Application Development :: Lab 3" /> 
-    <meta name="keywords" content="Web,programming" /> 
+    <meta name="keywords" content="Web,programming" />
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>leap year form</title> 
 </head> 
 <body> 

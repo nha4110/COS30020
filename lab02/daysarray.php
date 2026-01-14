@@ -2,7 +2,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" > 
     <meta name="description" content="Web Programming :: Lab 2" > 
-    <meta name="keywords" content="Web,programming" > 
+    <meta name="keywords" content="Web,programming" >
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>Days display</title>
 </head>
 <body>

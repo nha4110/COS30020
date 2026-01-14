@@ -3,6 +3,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" > 
     <meta name="description" content="Web Programming :: Lab 2" > 
     <meta name="keywords" content="Web,programming" > 
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>Check if number and if it's even or not</title>
 </head>
 <body>

@@ -1,4 +1,5 @@
 <?php 
+    //  name="author" content="Lu Nhat Hoang - 105234956"
     function factorial ($n) { // declare the factorial function 
         $result = 1;  
         // declare and initialise the result variable 

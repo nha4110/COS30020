@@ -8,7 +8,7 @@
 </head> 
 <body> 
     <h1>Lab 03 Task 2 - Leap Year</h1>
-    <form action="">
+    <form action="leapyear.php" method="get">
         <label for="leap_cal">Year:</label>
         <input type="text" id="leap_cal" name="leap_cal" required>
         <button type="submit">Check For Leap Year</button>

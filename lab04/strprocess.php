@@ -1,17 +1,17 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-  <meta charset="utf-8" /> 
-  <meta name="description" content="Web application development" /> 
-  <meta name="keywords" content="PHP" /> 
-  <meta name="author"   content="Your Name" /> 
-  <title>String Processing</title> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta name="description" content="Web Application Development :: Lab 4" /> 
+  <meta name="keywords" content="Web,programming" />
+  <meta name="author" content="Lu Nhat Hoang - 105234956">
+  <title>Vowels Check</title> 
 </head> 
 <body> 
 <h1>Web Programming - Lab 4</h1> 
 <?php  
-  if (isset ($_POST["inputstr"])){ // (1) check if form data exists 
-    $str = $_POST["inputstr"];    // (2) obtain the form data 
+  if (isset ($_POST["Vowels_Input"])){ // (1) check if form data exists 
+    $str = $_POST["Vowels_Input"];    // (2) obtain the form data 
     $pattern = "/^[A-Za-z ]+$/";  // set regular expression pattern 
     if (preg_match($pattern, $str)) {  // (3) check if $str matches regex 
       $ans = "";                  // initialise variable for the answer 

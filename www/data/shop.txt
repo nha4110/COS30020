@@ -1,2 +1,4 @@
 Apple,15
 carrot,2
+Meat,22
+watermelon,1

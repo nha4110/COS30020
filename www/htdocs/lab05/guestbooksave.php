@@ -62,6 +62,6 @@
 
         echo "<a href='$page'>Show Guest Book</a>";
     ?>
-
+    <a href="../lab05/guestbookshow.php">Show Guest Book</a>
 </body>
 </html>

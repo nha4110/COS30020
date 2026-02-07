@@ -1,17 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index page for the job search sys</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Job Vacancy Posting System</title>
 </head>
 <body>
-    <?php
+    <div id="index-container">
+        <!-- Header -->
+        <div id="index-header">
+            <h1 id="index-title">Assignment 1: Job Vacancy Posting System</h1>
+            <nav id="index-nav">
+                <a href="postjobform.php">Post Job Form</a>
+                <a href="searchjobform.php">Search Job Form</a>
+                <a href="about.php">About</a>
+            </nav>
+        </div>
 
-    ?>
-    <h1>Job posting website.</h1>
-    <p>Name: Lu Nhat Hoang</p>
-    <p>Student ID: 105234956</p>
-    <p>Emai: <a href="mailto:105234956@student.swin.edu.au">105234956@student.swin.edu.au</a></p>
-    <p>bruh bruh bruh</p>
+        <!-- Body -->
+        <div id="index-body">
+            <div id="index-profile">
+                <p><strong>Name:</strong> Lu Nhat Hoang</p>
+                <p><strong>Student ID:</strong> 105234956</p>
+                <p><strong>Email:</strong> <a href="mailto:105234956@swin.edu.au">105234956@student.swin.edu.au</a></p>
+            </div>
+            <div id="index-declaration">
+                <p>I declare that this assignment is my individual work. I have not worked collaboratively, nor have I copied from any other student’s work or from any other source.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="index-footer">
+            <footer>
+                <p>&copy; COS30020 — Job Vacancy Posting System</p>
+                <p>Developed in 2026 | Swinburne University</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

@@ -10,18 +10,18 @@
 <body>
     <h1>Lab05 Task 2 - Guest Book</h1>
 
-    <?php
-        $filename = "../../data/lab05/guestbook.txt";
-
-        if (is_readable($filename)) {
-            echo "<pre>";
-            $content = file_get_contents($filename);
-            echo stripslashes($content);
-            echo "</pre>";
-        } else {
-            echo "<p>Guest book is empty or cannot be read.</p>";
-        }
-    ?>
+<?php
+     $filename = "../../data/lab05/guestbook.txt";
+    if (is_readable($filename)) {
+        $content = file_get_contents($filename); // extra challenge file_get_contents() function, explode()
+        $names = explode("\n", $content); 
+        $names = array_filter(array_map('stripslashes', $names)); 
+        echo "<pre>" . implode(", ", $names) . "</pre>"; 
+    }
+    else {
+        echo "<p>Guest book is empty or cannot be read.</p>"; 
+    } 
+?>
 
 </body>
 </html>

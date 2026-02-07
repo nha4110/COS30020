@@ -49,7 +49,7 @@
         $handle = fopen($filename, "a");
 
         if ($handle) {
-            $data = $First . ", " . $Last . "\n";
+            $data = $First . " " . $Last . "\n"; // Change will add command later in guestbookshow.php
             if (fwrite($handle, $data)) {
                 echo "<p>Thank you for signing the Guest Book!</p>";
             } else {

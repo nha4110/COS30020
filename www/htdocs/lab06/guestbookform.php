@@ -20,6 +20,6 @@
             <input type="reset" value="Reset Form">
         </fieldset>
     </form> 
-    <a href="../lab05/guestbookshow.php">Show Guest Book</a>
+    <a href="../lab06/guestbookshow.php">Show Guest Book</a>
 </body> 
 </html> 

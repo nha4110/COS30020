@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Web Application Development :: Assignment 1" /> 
+    <meta name="keywords" content="Web,programming" />
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
     <link rel="stylesheet" href="style/style.css">
     <title>Job Vacancy Posting System</title>
 </head>

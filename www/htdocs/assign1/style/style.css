@@ -153,3 +153,77 @@
     text-decoration: none;
     font-weight: bold;
 }
+/* ===========
+    searchjobprocess.php
+  ============*\
+  /* Error output */
+#search-process-error-container {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid red;
+    background-color: #ffe5e5;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#search-process-error-title {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#search-process-error-message {
+    margin-bottom: 15px;
+}
+
+#search-process-error-links {
+    margin-top: 10px;
+}
+
+#search-process-error-home,
+#search-process-error-search {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Success results */
+#search-process-success-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#search-process-details {
+    width: 70%;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Each job card */
+.search-process-card {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.search-process-job {
+    margin: 0;
+}
+
+/* Links */
+#search-process-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#search-process-home,
+#search-process-search {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066cc;
+}

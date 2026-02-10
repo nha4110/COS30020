@@ -30,7 +30,6 @@
         echo '<a href="index.php">Return to Home</a> | ';
         echo '<a href="postjobform.php">Return to form</a>';
         echo '</div>';
-
         echo '</div>';
         exit;
     } // 2 functions allow for easy styling

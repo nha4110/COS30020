@@ -25,7 +25,7 @@
             <div id="index-profile">
                 <p><strong>Name:</strong> Lu Nhat Hoang</p>
                 <p><strong>Student ID:</strong> 105234956</p>
-                <p><strong>Email:</strong> <a href="mailto:105234956@swin.edu.au">105234956@student.swin.edu.au</a></p>
+                <p><strong>Email:</strong> <a href="mailto:105234956@student.swin.edu.au">105234956@student.swin.edu.au</a></p>
             </div>
             <div id="index-declaration">
                 <p>I declare that this assignment is my individual work. I have not worked collaboratively, nor have I copied from any other student’s work or from any other source.</p>

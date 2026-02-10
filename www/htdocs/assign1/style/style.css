@@ -3,93 +3,153 @@
 /* ================================
    Styles specifically for index.php
    ================================ */
-
+/* Main container */
 #index-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f4f6f9;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Header */
 #index-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 15px 30px;
     display: flex;
-    justify-content: space-between; /* nav left, title center */
-    align-items: left;
+    justify-content: space-between; /* title left, nav middle */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
 }
 
 #index-title {
-    margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
-    flex: 1; /* ensures it stays centered */
+    flex: 1;
+    text-align: left;
 }
 
 #index-nav {
-    display: flex;
-    align-content:center;
-    gap: 20px;
+    flex: 1;
+    text-align: center;
 }
 
 #index-nav a {
-    color: #ecf0f1;
+    margin: 0 10px;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-#index-nav a:hover {
-    color: #1abc9c;
 }
 
 /* Body */
 #index-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    margin: 30px auto;
+    width: 60%;
+    text-align: center;
 }
 
-#index-profile {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+#index-profile, #index-declaration {
     margin-bottom: 20px;
-}
-
-#index-profile p {
-    margin: 10px 0;
-    font-size: 1rem;
-}
-
-#index-declaration {
-    max-width: 600px;
-    text-align: center;
-    font-style: italic;
-    color: #555;
 }
 
 /* Footer */
 #index-footer {
-    background-color: #2c3e50;
-    color: #fff;
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    font-size: 0.9rem;
 }
 
-#index-footer p {
-    margin: 5px 0;
+/* ================================
+   Styles specifically for postjobform.php
+   ================================ */
+   #form-container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#position-id, #job-title, #job-description,
+#closing-date, #position-type, #contract-type,
+#location-type, #application-type, #form-actions {
+    margin-bottom: 15px;
+}
+/* ================================
+   Styles specifically for postjobprocess.php
+   ================================ */
+
+#process-error {
+    width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Error box
+   ================================ */
+
+#process-error {
+    text-align: left;
+}
+
+#process-error-title {
+    color: #b00020;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#process-error-message {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+#process-error-links {
+    text-align: center;
+}
+
+#process-error-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================================
+   Success box
+   ================================ */
+
+#process-success {
+    text-align: left;
+}
+
+#process-success-title {
+    color: #006400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#process-success-details {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+#process-success-details p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+#process-success-links {
+    text-align: center;
+}
+
+#process-success-links a {
+    text-decoration: none;
+    font-weight: bold;
 }

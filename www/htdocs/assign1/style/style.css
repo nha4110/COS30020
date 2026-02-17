@@ -3,54 +3,125 @@
 /* ================================
    Styles specifically for index.php
    ================================ */
+/* Remove default spacing & set full page background */
+#index-page {
+    background-color: #FFD372;
+}
+
 /* Main container */
+
+/*
 #index-container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    width: auto;
+    min-height: auto;
+    background-color: #FFD372;
 }
+*/
 
-/* Header */
+/* ================= HEADER ================= */
+
+/* Header same width as body box */
 #index-header {
-    display: flex;
-    justify-content: space-between; /* title left, nav middle */
-    align-items: center;
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 0;
+    overflow: hidden;
 }
 
+/* Title aligned left */
 #index-title {
-    flex: 1;
-    text-align: left;
+    float: left;
+    margin: 0;
+    font-size: 160%;
+    color: black;
 }
 
+/* Nav aligned right */
 #index-nav {
-    flex: 1;
-    text-align: center;
+    float: right;
 }
 
 #index-nav a {
-    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #F15B42;
+    color: white;
+    padding: 8px 18px;
+    border: 2px solid black;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#index-nav a:hover {
+    background-color: white;
+    color: #F15B42;
+}
+
+/* Clear header floats */
+#index-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ================= BODY ================= */
+
+#index-body {
+    width: 100%;
+    padding: 3% 0 5% 0;
+}
+
+/* Big sharp white box */
+#index-body-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5%;
+    min-height: 25vh;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#index-profile {
+    width: 100%;
+}
+
+/* Info section */
+#index-info {
+    width: 100%;
+    font-size: 130%;
+    line-height: 1.8;
+    margin-bottom: 8%;
+}
+
+/* Declaration centered */
+#index-declaration {
+    width: 100%;
+    padding: 2%;
+    background-color: #F15B42;
+    color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Email styling */
+#index-info a {
+    color: #F15B42;
+    font-weight: bold;
     text-decoration: none;
 }
 
-/* Body */
-#index-body {
-    margin: 30px auto;
-    width: 60%;
-    text-align: center;
+#index-info a:hover {
+    text-decoration: underline;
 }
 
-#index-profile, #index-declaration {
-    margin-bottom: 20px;
-}
+/* ================= FOOTER ================= */
 
-/* Footer */
 #index-footer {
-    margin-top: 40px;
-    padding: 10px;
-    border-top: 2px solid #ccc;
-    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 0;
+    border-top: 2px solid black;
 }
 
 /* ================================

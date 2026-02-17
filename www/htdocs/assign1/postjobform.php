@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style/style.css">
 </head> 
 <body> 
+    <?php
+        // Get current server date
+        $today = date('d/m/y');
+    ?>
     <!-- Main container -->
     <div id="form-container">
         <h1 id="form-title">Job Vacancy Form</h1>
@@ -42,9 +46,13 @@
 
                 <div id="closing-date">
                     <label for="Closing_Date">Closing Date</label>
-                    <input type="text" id="Closing_Date" name="Date" 
-                           placeholder="dd/mm/yy" 
-                           required>
+                    <input type="text" 
+                        id="Closing_Date" 
+                        name="Date" 
+                        value="<?php echo $today; ?>"
+                        pattern="\d{2}/\d{2}/\d{2}"
+                        title="Format: dd/mm/yy"
+                        required>
                 </div>
 
                 <div id="position-type">

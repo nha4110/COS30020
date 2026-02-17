@@ -80,7 +80,7 @@
     <meta name="keywords" content="Web,programming" />
     <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>Search process</title> 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head> 
 <body> 
     <?php  

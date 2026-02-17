@@ -17,7 +17,7 @@ function Show_Error($Message) {
     <meta name="keywords" content="Web,programming" />
     <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>About This Assignment</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>About This Assignment</h1>

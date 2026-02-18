@@ -56,4 +56,10 @@
             </div>
         </form>
     </div>
+    <div class="index-footer">
+        <footer>
+            <p>&copy; COS30020 — Job Vacancy Posting System | Developed in 2026</p>
+        </footer>
+    </div>
 </body>
+</html>

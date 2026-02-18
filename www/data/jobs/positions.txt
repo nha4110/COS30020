@@ -2,3 +2,4 @@ ID067	IT Central Mid	Work in the middle of company	23/02/27	Full Time	On-going	O
 ID068	ww	ss	12/02/20	Part Time	Fixed Term	On site		Email
 ID060	aaaaaaaaaaaaaaaaaaaa	ddds	12/02/20	Full Time	Fixed Term	On site	Post	
 ID259	Game Tester	Test game and find bug	25/09/26	Part Time	Fixed Term	Remote		Email
+ID010	Man Manager	Mannage man in a warehouse	18/02/26	Full Time	Fixed Term	On site	Post	

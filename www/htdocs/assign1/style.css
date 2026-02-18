@@ -1,12 +1,11 @@
-// Lu Nhat Hoang - 105234956
-// create 7/2/2026
+/* Lu Nhat Hoang - 105234956 */
+/* create 7/2/2026 */
 /* ================================
    Styles specifically for index.php
    ================================ */
-.background-test-class { background-color: #FFD372; /* bright yellow */ min-height: 100vh; /* fill full browser height */ margin: 0; /* remove default margins */ padding: 0; }
-
-
-
+.background-class { 
+    background-color: #FFD372; /* bright yellow */ 
+}
 /* ================= HEADER ================= */
 
 /* Header same width as body box */
@@ -67,6 +66,7 @@
     padding: 5%;
     min-height: 25vh;
     border: 2px solid black;
+    background-color: white;
 }
 
 #index-profile {
@@ -113,178 +113,396 @@
     border-top: 2px solid black;
     text-align:center;
 }
-
 /* ================================
-   Styles specifically for postjobform.php
-   ================================ */
-   #form-container {
-    width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+   Styles for postjobform.php (Theme Matched)
+================================ */
+
+#form-container {
+    width: 600px;
+    margin: 20px auto; /* Reduced margin to keep it higher up */
+    padding: 25px;
+    background: #ffffff; /* White box */
+    border: 2px solid black; /* Matches index-body-wrapper */
 }
 
 #form-title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 150%;
+    color: black;
 }
 
+#form-fieldset {
+    border: 2px solid black; /* Sharp black border for the fieldset */
+    padding: 15px;
+}
+
+#form-legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Shortened spacing for form groups */
 #position-id, #job-title, #job-description,
 #closing-date, #position-type, #contract-type,
-#location-type, #application-type, #form-actions {
-    margin-bottom: 15px;
-}
-/* ================================
-   Styles specifically for postjobprocess.php
-   ================================ */
-
-#process-error {
-    width: 600px;
-    margin: 60px auto;
-    padding: 30px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+#location-type, #application-type {
+    margin-bottom: 10px; /* Reduced from 15px/20px to make it shorter */
 }
 
-/* ================================
-   Error box
-   ================================ */
+/* Make labels look consistent with the "Name/ID" style on index */
+#job-form label, #job-form p {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2px;
+}
 
-#process-error {
+/* Inputs styled with the thick black border */
+#job-form input[type="text"], 
+#job-form textarea {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+/* Actions Area */
+#form-actions {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+/* Buttons styled like your Nav links */
+#form-actions input[type="submit"], 
+#form-actions input[type="reset"] {
+    background-color: #F15B42;
+    color: white;
+    padding: 8px 15px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-actions input[type="submit"]:hover, 
+#form-actions input[type="reset"]:hover {
+    background-color: white;
+    color: #F15B42;
+}
+
+#form-actions a {
+    text-decoration: none;
+    color: #F15B42;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* ============================================================
+   Styles for postjobprocess.php (Consistent Assignment Theme)
+   ============================================================ */
+
+/* Main Container shared by Success and Error boxes */
+#process-error, #process-success {
+    width: 650px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;      /* White box */
+    border: 2px solid black;  /* Thick black border */
     text-align: left;
 }
 
+/* Error Box Styling */
 #process-error-title {
-    color: #b00020;
-    margin-bottom: 15px;
+    color: #F15B42;           /* Using your theme's orange/red for errors */
     text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #process-error-message {
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-#process-error-links {
-    text-align: center;
-}
-
-#process-error-links a {
-    margin: 0 12px;
-    text-decoration: none;
     font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* ================================
-   Success box
-   ================================ */
-
-#process-success {
-    text-align: left;
-}
-
+/* Success Box Styling */
 #process-success-title {
-    color: #006400;
+    color: black;             /* Keep title neutral, let border show structure */
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
+/* The "Receipt" look for job details */
 #process-success-details {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    padding: 20px;
     margin-bottom: 25px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background: #f9f9f9;
+    line-height: 1.8;
 }
 
-#process-success-details p {
-    margin: 8px 0;
-    line-height: 1.5;
+#process-success-details strong {
+    color: #F15B42;           /* Highlight the labels in orange */
 }
 
-#process-success-links {
+/* Links and Navigation */
+#process-error-links, #process-success-links {
     text-align: center;
+    border-top: 2px solid black;
+    padding-top: 20px;
 }
 
+#process-error-links a, 
 #process-success-links a {
     text-decoration: none;
+    background-color: #F15B42;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
     font-weight: bold;
+    margin: 0 5px;
+    display: inline-block;
 }
-/* ===========
-    searchjobprocess.php
-  ============*\
-  /* Error output */
+
+#process-error-links a:hover, 
+#process-success-links a:hover {
+    background-color: white;
+    color: #F15B42;
+}
+/* ============================================================
+   Styles for searchjobprocess.php (Consistent Assignment Theme)
+   ============================================================ */
+
+/* Error container matches the error box in postjobprocess */
 #search-process-error-container {
-    width: 60%;
-    margin: 40px auto;
-    padding: 20px;
-    border: 2px solid red;
-    background-color: #ffe5e5;
-    border-radius: 6px;
+    width: 650px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 2px solid black; /* Bold black instead of soft red */
     text-align: center;
 }
 
 #search-process-error-title {
-    color: red;
-    margin-bottom: 10px;
-}
-
-#search-process-error-message {
+    color: #F15B42; /* Your theme orange */
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
     margin-bottom: 15px;
 }
 
-#search-process-error-links {
-    margin-top: 10px;
-}
-
-#search-process-error-home,
-#search-process-error-search {
-    margin: 0 8px;
-    text-decoration: none;
-    color: #333;
-}
-
-/* Success results */
+/* Success results styling */
 #search-process-success-title {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 180%;
 }
 
 #search-process-details {
-    width: 70%;
-    margin: 0 auto 20px auto;
-    padding: 15px;
-    border-radius: 6px;
+    width: 75%; /* Matching index-body-wrapper width */
+    margin: 0 auto 30px auto;
 }
 
-/* Each job card */
+/* Each job card now looks like a smaller version of the profile box */
 .search-process-card {
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    margin-bottom: 12px;
-    padding: 10px;
-    border-radius: 6px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
     text-align: left;
 }
 
-.search-process-job {
-    margin: 0;
+.search-process-card p {
+    margin: 8px 0;
+    line-height: 1.4;
 }
 
-/* Links */
-#search-process-links {
+.search-process-card strong {
+    color: #F15B42; /* Highlight labels in theme orange */
+    display: inline-block;
+    width: 140px; /* Aligns the text for a cleaner look */
+}
+
+/* Navigation Links Styled as Buttons */
+#search-process-links, #search-process-error-links {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-bottom: 40px;
 }
 
-#search-process-home,
-#search-process-search {
-    margin: 0 10px;
+#search-process-home, #search-process-search,
+#search-process-error-home, #search-process-error-search {
     text-decoration: none;
-    color: #0066cc;
+    background-color: #F15B42;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#search-process-home:hover, #search-process-search:hover,
+#search-process-error-home:hover, #search-process-error-search:hover {
+    background-color: white;
+    color: #F15B42;
+}
+/* ==============================================
+   Search Job Form (Theme Matched)
+   ============================================== */
+
+/* The main title/input group spacing */
+#search-input-group {
+    margin-bottom: 20px;
+}
+
+#search-input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Styling the collapsible Advanced Search */
+#advanced-search {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+
+#advanced-search summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    color: #F15B42;
+    outline: none;
+}
+
+#advanced-search summary:hover {
+    text-decoration: underline;
+}
+
+.search-section {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.search-section p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Consistent Button Styling */
+#form-actions input[type="submit"], 
+#form-actions input[type="reset"] {
+    background-color: #F15B42;
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#form-actions input[type="submit"]:hover, 
+#form-actions input[type="reset"]:hover {
+    background-color: white;
+    color: #F15B42;
+}
+
+#form-actions p {
+    margin-top: 20px;
+}
+
+#form-actions a {
+    color: #F15B42;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ==============================================
+   About Page Styles (ID & Class based)
+   ============================================== */
+
+#about-container {
+    width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 2px solid black;
+}
+
+#about-title {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-section-header {
+    color: #F15B42;
+    font-size: 130%;
+    margin-top: 25px;
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
+
+#about-list {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+}
+
+.about-list-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.highlight-text {
+    color: black;
+    font-size: 110%;
+}
+
+.about-text {
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+#discussion-box {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#discussion-image {
+    max-width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#about-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#about-home-link {
+    background-color: #F15B42;
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about-home-link:hover {
+    background-color: white;
+    color: #F15B42;
 }

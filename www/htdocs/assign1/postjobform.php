@@ -6,9 +6,9 @@
     <meta name="keywords" content="Web,programming" />
     <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>Job Form</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head> 
-<body> 
+<body class="background-class" > 
     <?php
         // Get current server date
         $today = date('d/m/y');

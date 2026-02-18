@@ -1,25 +1,6 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-    <meta name="description" content="Web Application Development :: Assignment 1" /> 
-    <meta name="keywords" content="Web,programming" />
-    <meta name="author" content="Lu Nhat Hoang - 105234956">
-    <title>Job Form</title> 
-    <link rel="stylesheet" href="style.css">
-</head> 
-<body>
-    <?php  
-    // get data and check for null
-    // i switch from isset to ?? to help prevent undefine error
-    $PositionID = $_POST["ID"] ?? ''; 
-    $Title = $_POST["Title"] ?? '';
-    $Description = $_POST["Description"] ?? '';
-    $Date = $_POST["Date"] ?? '';
-    $Position = $_POST["Position"] ?? ""; 
-    $Contract = $_POST["Contract"] ?? "";
-    $Location = $_POST["Location"] ?? "";
-    $Applications = $_POST['Application'] ?? [];
+<?php 
+    // function
+    // Error message
     function Show_Error($Message) { // output error message
         echo '<div id="process-error">';
 
@@ -32,8 +13,8 @@
         echo '</div>';
         echo '</div>';
         exit;
-    } // 2 functions allow for easy styling
-
+    } 
+    // success message
     function Show_Success($PositionID, $Title, $Description, $Date, $Position, $Contract, $Location, $Applications) { // output final stored position
         echo '<div id="process-success">';
 
@@ -56,6 +37,30 @@
 
         echo '</div>';
     }
+?>
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Web Application Development :: Assignment 1" /> 
+    <meta name="keywords" content="Web,programming" />
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
+    <title>Job Form</title> 
+    <link rel="stylesheet" href="style.css?v=4">
+</head> 
+<body class="background-class">
+    <?php  
+    // get data and check for null
+    // i switch from isset to ?? to help prevent undefine error
+    $PositionID = $_POST["ID"] ?? ''; 
+    $Title = $_POST["Title"] ?? '';
+    $Description = $_POST["Description"] ?? '';
+    $Date = $_POST["Date"] ?? '';
+    $Position = $_POST["Position"] ?? ""; 
+    $Contract = $_POST["Contract"] ?? "";
+    $Location = $_POST["Location"] ?? "";
+    $Applications = $_POST['Application'] ?? [];
+
 
     // Req 1: a) all fields are mandatory making sure an error message is output
     if (

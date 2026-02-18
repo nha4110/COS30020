@@ -80,9 +80,9 @@
     <meta name="keywords" content="Web,programming" />
     <meta name="author" content="Lu Nhat Hoang - 105234956">
     <title>Search process</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head> 
-<body> 
+<body class="background-class"> 
     <?php  
     // req 1: check if title exits in txt if not return error
     $Title = trim($_GET["Title"] ?? "");

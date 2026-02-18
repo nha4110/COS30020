@@ -5,11 +5,10 @@
     <meta name="description" content="Web Application Development :: Assignment 1" /> 
     <meta name="keywords" content="Web,programming" />
     <meta name="author" content="Lu Nhat Hoang - 105234956">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <title>Job Vacancy Posting System</title>
 </head>
-<body class="background-test-class">
-
+<body class="background-class">
     <!-- Header -->
     <div id="index-header">
         <h1 id="index-title">Assignment 1: Job Vacancy System</h1>

@@ -85,12 +85,13 @@
 <body class="background-class"> 
     <?php  
     // req 1: check if title exits in txt if not return error
-    $Title = trim($_GET["Title"] ?? "");
+    // Replaced ?? with isset ternary for PHP 5.4
+    $Title = isset($_GET["Title"]) ? trim($_GET["Title"]) : "";
     // Advanced search
-    $Position = trim($_GET["Position"] ?? "");
-    $Contract = trim($_GET["Contract"] ?? "");
-    $Applications = $_GET["Application"] ?? [];
-    $Location = trim($_GET["Location"] ?? "");
+    $Position = isset($_GET["Position"]) ? trim($_GET["Position"]) : "";
+    $Contract = isset($_GET["Contract"]) ? trim($_GET["Contract"]) : "";
+    $Applications = isset($_GET["Application"]) ? $_GET["Application"] : array();
+    $Location = isset($_GET["Location"]) ? trim($_GET["Location"]) : "";
 
     $filename = "../../data/jobs/positions.txt";
     
@@ -106,7 +107,7 @@
 
     // req 2 + req 3: search match charactor not whole string, if found much be listed + link to return home
     $Records = read_positions($filename); 
-    $Match = []; 
+    $Match = array(); 
     foreach ($Records as $fields) {
         $ok = true; 
 
@@ -149,7 +150,11 @@
     usort($Match, function($a, $b) {
         $dateA = DateTime::createFromFormat('d/m/y', $a[3]);
         $dateB = DateTime::createFromFormat('d/m/y', $b[3]);
-        return $dateB <=> $dateA; // descending
+        // Replaced <=> with PHP 5.4 compatible comparison
+        if ($dateA == $dateB) {
+            return 0;
+        }
+        return ($dateB > $dateA) ? 1 : -1; // descending
     });
 
     // Filter out past dates

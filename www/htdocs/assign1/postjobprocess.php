@@ -52,14 +52,14 @@
     <?php  
     // get data and check for null
     // i switch from isset to ?? to help prevent undefine error
-    $PositionID = $_POST["ID"] ?? ''; 
-    $Title = $_POST["Title"] ?? '';
-    $Description = $_POST["Description"] ?? '';
-    $Date = $_POST["Date"] ?? '';
-    $Position = $_POST["Position"] ?? ""; 
-    $Contract = $_POST["Contract"] ?? "";
-    $Location = $_POST["Location"] ?? "";
-    $Applications = $_POST['Application'] ?? [];
+    $PositionID = isset($_POST["ID"]) ? $_POST["ID"] : ''; 
+    $Title = isset($_POST["Title"]) ? $_POST["Title"] : '';
+    $Description = isset($_POST["Description"]) ? $_POST["Description"] : '';
+    $Date = isset($_POST["Date"]) ? $_POST["Date"] : '';
+    $Position = isset($_POST["Position"]) ? $_POST["Position"] : ""; 
+    $Contract = isset($_POST["Contract"]) ? $_POST["Contract"] : "";
+    $Location = isset($_POST["Location"]) ? $_POST["Location"] : "";
+    $Applications = isset($_POST['Application']) ? $_POST['Application'] : array();
 
 
     // Req 1: a) all fields are mandatory making sure an error message is output
@@ -120,7 +120,7 @@
     $ByPost = in_array("Post", $Applications) ? "Post" : "";
     $ByEmail = in_array("Email", $Applications) ? "Email" : "";
 
-    $Record = implode("\t", [
+    $Record = implode("\t", array(
         $PositionID,
         $Title,
         $Description,
@@ -130,7 +130,7 @@
         $Location,
         $ByPost,
         $ByEmail
-    ]);
+    ));
 
     file_put_contents($file, $Record . PHP_EOL, FILE_APPEND); // add record
 

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>VIP Member Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Web Application Development :: Lab 8" /> 
+    <meta name="keywords" content="Web,programming" />
+    <meta name="author" content="Lu Nhat Hoang - 105234956">
+    <title>Homepase for vip management</title> 
 </head>
 <body>
     <h1>VIP Member Management System</h1>
